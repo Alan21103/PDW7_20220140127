@@ -1,0 +1,173 @@
+.video-container {
+    width: 100%; /* Lebar video mengikuti lebar container */
+    max-width: 800px; /* Maksimum lebar video */
+    margin: 0 auto; /* Pusatkan video di dalam container */
+}
+
+.video-container video {
+    width: 100%; /* Lebar video mengikuti lebar video-container */
+    height: auto; /* Tinggi video disesuaikan dengan rasio aspek */
+    display: block; /* Hilangkan spasi bawah video */
+}
+
+/* CSS untuk Navbar */
+
+.navbar {
+    background-color: #343a40; /* Warna latar belakang navbar */
+}
+
+.navbar-brand img {
+    margin-right: 10px; /* Jarak kanan logo */
+}
+
+.navbar-toggler {
+    border-color: transparent; /* Warna border tombol toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Warna ikon toggler */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Warna teks link */
+    margin-right: 15px; /* Jarak kanan link */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold; /* Ketebalan font untuk link aktif */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Warna teks link saat hover */
+}
+
+.navbar-collapse {
+    justify-content: flex-end; /* Posisi menu ke kanan */
+}
+
+.form-control {
+    border-color: #6c757d; /* Warna border input */
+}
+
+.btn-outline-light {
+    color: white; /* Warna teks tombol */
+    border-color: white; /* Warna border tombol */
+}
+
+.btn-outline-light:hover {
+    color: #343a40; /* Warna teks tombol saat hover */
+    background-color: white; /* Warna latar tombol saat hover */
+}
+
+.footer {
+    background-color: #343a40; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 20px 0; /* Ruang kosong di dalam footer */
+    position: fixed; /* Penempatan absolut untuk footer */
+    bottom: 0; /* Menempatkan footer di bagian bawah halaman */
+    width: 100%; /* Lebar footer menyesuaikan dengan lebar layar */
+}
+
+
+/* CSS untuk bagian Home */
+
+.section.Home {
+    background-size: cover; /* Menyesuaikan ukuran gambar latar */
+    background-position: center; /* Posisi gambar latar di tengah */
+    height: 800px; /* Tinggi bagian Home */
+    color: azure; /* Warna teks */
+    text-align: center; /* Posisi teks di tengah */
+    padding: 100px 0; /* Padding atas dan bawah */
+}
+
+.section.Home h1.display-4 {
+    font-weight: bold; /* Ketebalan font */
+    margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+.section.Home p.lead {
+    font-size: 1.2rem; /* Ukuran font lead */
+    margin-bottom: 30px; /* Jarak bawah lead */
+}
+
+.section.Home hr.my-4 {
+    border-color: azure; /* Warna garis pemisah */
+    width: 50px; /* Lebar garis pemisah */
+    margin: 40px auto; /* Margin garis pemisah */
+}
+
+.section.Home .btn.btn-primary.btn-lg {
+    background-color: #007bff; /* Warna tombol */
+    border-color: #007bff; /* Warna border tombol */
+}
+
+.section.Home .btn.btn-primary.btn-lg:hover {
+    background-color: #0056b3; /* Warna latar hover tombol */
+    border-color: #0056b3; /* Warna border hover tombol */
+}
+
+
+/* CSS untuk bagian About */
+
+.section.About {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+.section.About h2 {
+    font-size: 2.5rem; /* Ukuran font judul */
+    margin-bottom: 30px; /* Jarak bawah judul */
+    color: #343a40; /* Warna teks judul */
+}
+
+.section.About p {
+    font-size: 1.1rem; /* Ukuran font paragraf */
+    line-height: 1.6; /* Spasi antar baris */
+    color: #6c757d; /* Warna teks paragraf */
+}
+
+@media (max-width: 767px) {
+    .section.About h2 {
+        font-size: 2rem; /* Ukuran font judul pada layar kecil */
+    }
+}
+
+/* CSS untuk bagian Gallery */
+
+.section.Gallery {
+    padding: 50px 0; /* Padding atas dan bawah */
+    background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+.section.Gallery h2 {
+    font-size: 2.5rem; /* Ukuran font judul */
+    margin-bottom: 30px; /* Jarak bawah judul */
+    color: #343a40; /* Warna teks judul */
+}
+
+.section.Gallery .row {
+    justify-content: center; /* Posisi konten ke tengah */
+}
+
+.section.Gallery .card {
+    transition: transform 0.3s ease; /* Transisi hover */
+}
+
+.section.Gallery .card:hover {
+    transform: scale(1.05); /* Efek perbesar saat hover */
+}
+
+.section.Gallery .card img {
+    height: auto; /* Menyesuaikan tinggi gambar */
+    max-width: 100%; /* Maksimum lebar gambar */
+}
+
+.section.Gallery .col-md-4 {
+    margin-bottom: 30px; /* Jarak bawah setiap item */
+}
+
+@media (max-width: 767px) {
+    .section.Gallery h2 {
+        font-size: 2rem; /* Ukuran font judul pada layar kecil */
+    }
+}
